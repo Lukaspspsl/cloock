@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clock</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="clock">
+    <div id="time-row">
+        <div id="hours" class="time"></div>
+        <div id="separator">:</div>
+        <div id="minutes" class="time"></div>
+        <div class="separator">:</div>
+        <div id="seconds" class="time"></div>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
